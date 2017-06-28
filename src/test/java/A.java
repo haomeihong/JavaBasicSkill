@@ -19,4 +19,7 @@ public class A {
         System.out.println(aa);
         System.out.println(b);
     }
+    static {
+        System.out.println("after A");
+    }
 }
