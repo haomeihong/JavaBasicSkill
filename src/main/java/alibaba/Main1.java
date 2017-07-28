@@ -5,9 +5,9 @@ package alibaba;
  */
 public class Main1 {
     public static void main(String[] args){
-        String[] ss=null;
-        for(String s:ss){
+        for(String s:args){
             System.out.println(s);
+            System.out.println("你是");
         }
     }
 }
