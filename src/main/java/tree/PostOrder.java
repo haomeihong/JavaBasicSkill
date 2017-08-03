@@ -4,19 +4,12 @@ package tree;
  * Created by wangxiaomin03 on 17/7/31.
  */
 
+import common.TreeNode;
+
 import java.util.*;
 
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
 
-    TreeNode(int x) {
-        val = x;
-    }
-}
-
-public class Solution {
+public class PostOrder {
     public static void main(String[] arg) {
         TreeNode root = new TreeNode(2);
         root.left = new TreeNode(1);
