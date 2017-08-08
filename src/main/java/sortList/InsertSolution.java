@@ -1,5 +1,7 @@
 package sortList;
 
+import common.ListNode;
+
 import java.util.Scanner;
 
 /**
