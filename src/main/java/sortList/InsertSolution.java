@@ -6,29 +6,7 @@ import java.util.Scanner;
  * Created by wangxiaomin03 on 17/7/31.
  */
 public class InsertSolution {
-    public static class ListNode {
-        int val;
-        ListNode next;
 
-        ListNode(int x) {
-            val = x;
-            next = null;
-        }
-
-        @Override
-        public String toString() {
-            if (this == null) {
-                return "null";
-            }
-            ListNode node = this;
-            StringBuilder builder = new StringBuilder();
-            while (node != null) {
-                builder.append(node.val).append("->");
-                node = node.next;
-            }
-            return builder.toString();
-        }
-    }
 
     public static void main(String[] arg) {
 //        ListNode head = new ListNode(4);
@@ -41,11 +19,11 @@ public class InsertSolution {
         scanner.close();
         String[] tars = line.split(",");
         ListNode head = new ListNode(0);
-        ListNode p=head;
+        ListNode p = head;
         for (String s : tars) {
             System.out.println(s);
             p.next = new ListNode(Integer.valueOf(s));
-            p=p.next;
+            p = p.next;
         }
         System.out.println(head.next.toString());
         ListNode node = insertionSortList(head.next);

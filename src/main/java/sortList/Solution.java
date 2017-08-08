@@ -1,5 +1,7 @@
 package sortList;
 
+import common.ListNode;
+
 /**
  * Created by wangxiaomin03 on 17/5/4.
  */
@@ -29,12 +31,3 @@ public class Solution {
         return left;
     }
 }
-
-  class ListNode {
-      int val;
-      ListNode next;
-      ListNode(int x) {
-          val = x;
-          next = null;
-      }
- }
